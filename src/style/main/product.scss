@@ -16,7 +16,13 @@
         }
     }
     &mark{
-        display: table;
+        background: url(../img/clinic.png) center no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 20px;
+        top: 10px;
     }
     &title{
         font-size: 24px;
@@ -53,8 +59,12 @@
         bottom: 40px;
         left: 50px;
     }
-    
-
+    &main-img{
+        background: url(../img/goldenb.png) center no-repeat;
+        background-size: contain;
+        width: 220px;
+        height: 300px;
+    }
 }
 
 .sale-after{
@@ -76,11 +86,65 @@
 }
 
 @media (max-width: 890px) {
-    .product-more-picts {
+    .product-more{
       display: none;
     }
-    .product.smaller{
-        flex-wrap: wrap;
+    .product{
+        padding: 0;
+    }
+    .product-{
+        &mark{
+            width: 60px;
+            height: 60px;
+            position: relative;
+            left: 40px;
+            top: 30px;
+        }
+        &main-img{
+            width: 175px;
+            height: 225px;
+        }
+        &picts{
+            margin-right: 10px;
+            margin-left: -60px;
+        }
+        &title{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        &advantages-list li{
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        &price{
+            margin-top: 10px;
+            &-before{
+                font-size: 18px;            
+            }
+            &-sale{
+                font-size: 10px;            
+            }
+            &-after{
+                font-size: 28px;            
+            }
+        }
+    }
+    .add-btn.big-btn{
+        padding: 15px 25px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    .reward-stars i, .reviews{
+        font-size: 12px;
     }
 }
 
+@media (max-width: 420px) {
+    .product.smaller{
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+    .product-title{
+        margin-top: 7px;
+    }
+}

@@ -51,4 +51,10 @@
     .navigation.container{
         padding: 0;
     }
-  }
+}
+
+@media (max-width: 340px) {
+    .mobile-menu a{
+        font-size: 20px;
+    } 
+}
