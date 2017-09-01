@@ -1,0 +1,26 @@
+.using-{
+    &steps{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    &step{
+        text-align: center;
+        &-text{
+            margin-top: 10px;
+            padding-left: 20px; 
+            width: 250px;           
+        }
+    }
+    &text{
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 700px;
+        padding-bottom: 30px; 
+    }
+}
+.using{
+    padding-top: 30px;
+}

@@ -1,0 +1,22 @@
+.stat-{
+    &title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &view{
+        display: inline-block;
+        li{
+            margin: 10px 0;
+        }
+    }
+    &info{
+        margin: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1efef;        
+    }
+}
+.statistics .flex{
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}

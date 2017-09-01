@@ -1,0 +1,57 @@
+.other-{
+    &title{
+        font-size: 20px;
+        margin: 10px;
+    }
+    &blue{
+        background-color: #e3f1f9;
+        border: 2px solid #9cc5dc;
+        padding: 20px;
+        display: flex;
+        max-width: 400px;
+        margin-right: 20px;
+    }
+    &pro{
+        background-color: #f8ece6;
+        border: 2px solid #e1bfaf;
+        padding: 20px;
+        display: flex;
+        max-width: 400px;   
+        &-img{
+            margin-right: 25px;
+        }     
+    }
+    &ribbon{
+        margin-left: -145px;
+        margin-top: 60px;
+    }
+    &info{
+        max-width:300px;
+    }
+    &both{
+        display: flex;
+    }
+}
+
+.other{
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 890px) {
+    .other-blue, .other-pro{
+        align-items: center;        
+        margin: 5px;
+    }
+    .other-both{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .other-blue, .other-pro{
+        flex-wrap: wrap; 
+        justify-content: center;   
+    }
+}
