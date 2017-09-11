@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>2MinClub</title>
+	<title>JuliaDates</title>
 	<meta charset=utf-8>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<script src="https://code.jquery.com/jquery-3.2.1.js"
-		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		crossorigin="anonymous" defer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</script>
 	<script src="js/main.js" defer></script>
 </head>
 <body>
 	<header class="header">
-		//= template/contact.html
 		//= template/navigation.html
 	</header>
-	<main class="main">
-		//= template/main-product.html
-		//= template/main-other.html
-		//= template/main-statistics.html
-		//= template/main-video.html
+	<main class="main">		
+		//= template/top-girls.html
+		//= template/search.html
+		<section class="results">
+			//= template/filter.html
+			//= template/girl-cards.html
+			//= template/paginator.html
+		</section>	
 	</main>
-		//= template/footer.html
-	<div class="more">
-		//= template/more-using.html
-		//= template/more-NO.html
-	</div>
+	//= template/footer.html
 </body>
 </html>

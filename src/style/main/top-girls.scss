@@ -1,0 +1,31 @@
+@mixin top-girls-img($number){
+    width: 140px;
+    height: 140px;
+    background:url("../img/top-girls"+ $number + ".png") 100% 100% no-repeat $light-grey ;
+    background-size: contain; 
+    margin: 5px;
+    &:hover{
+       transform: scale(1.1);
+    }
+}
+
+@for $i from 1 through 8{
+    .top-girls_list_item:nth-child(#{$i}) a{
+        @include top-girls-img(#{$i});
+    }
+}
+
+.top-girls_list{
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+.top-girls{
+    background: $light-grey;    
+}
+
+@media (max-width: 1250px) {
+    .top-girls_list{
+        overflow-x: scroll;
+    }
+}

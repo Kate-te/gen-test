@@ -1,5 +1,5 @@
 {
-  "name": "lsd-test",
+  "name": "gen-test",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -7,14 +7,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KateBog/LSD-test.git"
+    "url": "git+https://github.com/KateBog/gen-test.git"
   },
   "author": "Kate Bohuslavska",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KateBog/LSD-test/issues"
-  },
-  "homepage": "https://github.com/KateBog/LSD-test#readme",
   "dependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",

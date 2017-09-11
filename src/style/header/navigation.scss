@@ -1,60 +1,53 @@
-.navigation{
+.nav{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 10px;
+}
+.nav-list{
     justify-content: space-between;
-    border-bottom: 1px solid #999;
-    *{
-        color: #023c5a;
-        font-weight: bolder;
+    font-size: 16px;
+    &_link{
+        color: $maincolor-text;
+        margin: 10px;  
+        &:hover{
+            color: #000;
+            text-shadow: 0.2px 0.2px 0.2px #777;
+        }      
     }
-    a:hover{
-        text-shadow: 0 0 0.3px #000;
-    }
-    ul{
-        display: flex;
-        li{
-            padding: 0 10px;
-            border-right: 1px solid #023c5a;           
-            &:last-child{
-                border: none;
-            }
-            i{
-                margin: 0 2px;
-            }
-        }
-    }
-}
-.mobile-menu{
-    display: none;
-    a{
-        font-size: 30px;
+    i{
+        color: $blue-text;
         margin: 10px;
-        &:last-child{
-            margin: 0;
-            padding: 20px;
-            background-color: #ff8106;
-            font-size: 20px;
-            i{
-                color: #fff;
-            }
-        }
+        font-size: 18px;
+    }
+} 
+
+.credits{
+    color: $blue-text;
+    font-size: 14px;
+    &:hover{
+        text-shadow: 0.2px 0.2px 0.2px #777;
+    }
+}
+.logo-img:focus{
+    outline: none;
+}
+.menu{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .side-nav li:not(:last-child),
+    .main-nav li:not(:first-child){
+        display: none;
+    }
+    .menu{
+        display: inherit;
     }
 }
 
-@media (max-width: 890px) {
-    .navigation{
-        ul, .menu{
-            display: none;
-        }
-    }
-    .mobile-menu{
-        display: block;
-    }
-    .navigation.container{
-        padding: 0;
+@media (max-width: 360px) {
+    .logo-img img{
+        width: 120px;
     }
 }
 
-@media (max-width: 340px) {
-    .mobile-menu a{
-        font-size: 20px;
-    } 
-}

@@ -1,0 +1,32 @@
+.paginator{
+    background-color: $light-grey;
+    .container{
+        justify-content: center;
+        padding: 20px 0 60px;        
+    }
+}
+.pages-list{
+    background-color:#fff; 
+    padding: 5px;
+    border-radius: 7px;
+    .page, .page-slider{
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #cccccc;
+        cursor: pointer;
+    }
+    .active-page{
+        color: #fff;
+        background-color: $blue-border;
+    }
+    .page-slider:hover{
+        transition: .5s;
+        color: $blue-text;
+    }
+}
+
+@media (max-width: 370px){
+    .paginator .page{
+        padding: 8px 10px;
+    }
+}

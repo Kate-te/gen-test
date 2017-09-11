@@ -1,0 +1,105 @@
+.girl-cards {
+    background-color: $light-grey;
+    .container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+.card{
+    width: 22.5%;
+    min-width: 255px;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    &_marks, 
+    &_nav{
+        width: 100%;
+        justify-content: space-between;
+        *{           
+            color:#fff;
+        }
+    }
+    &_nav{
+        margin-top: 180px;
+        background: linear-gradient(to right, #5d77b8, #638bc8);  
+        &>*{
+            padding: 12px 0;
+            width: 50%;
+            text-align: center;
+            &:hover{
+                box-shadow: 0 0 0 100px rgba(0,0,0,.2) inset;
+                transition: .5s;
+            }
+        }      
+    }
+    &_marks{
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    &_info{
+        background-color: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    i{
+        margin-right: 7px;
+    }
+    .fa-circle{
+        color: #5bae62;
+        font-size: 12px;
+        line-height: 17px;
+        vertical-align: text-bottom;
+    }
+    .top, .cam{
+        background-color: #d55176;
+        padding: 7px 7px 6px;
+        border-radius: 5px;
+    }
+    .cam{
+        background-color: rgba(0,0,0,0.5);
+        &:hover{
+            box-shadow: 0 0 0 100px rgba(0,0,0,.2) inset;
+            transition: .5s;
+        }
+    }
+    .star{
+        padding-right: 15px;        
+        border-right: 1px solid #7e9dd3;
+    }
+    .name{
+        display: inline-block;
+        margin: 15px 15px 10px;
+        font-size: 18px; 
+        color: $blue-text;
+        font-weight: 600;
+        letter-spacing: .7px;   
+    }
+    .live{
+        padding-left: 15px;
+        font-size: 14px; 
+        padding-bottom: 15px;
+    }
+}
+
+@mixin card($number){
+    background:url("../img/girl-"+ $number + ".jpg") 45% -10% no-repeat $light-grey ;
+    background-size: 150%; 
+    &:hover{
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);   
+        transition: .5s;     
+    }    
+}
+
+@for $i from 1 through 8{
+    .card:nth-child(#{$i}){
+        @include card(#{$i});
+    }
+}
+
+
+@media (max-width: 1120px) {
+    .girl-cards .container{
+        justify-content: center;
+    }
+}

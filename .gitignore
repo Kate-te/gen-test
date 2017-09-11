@@ -1,5 +1,1 @@
-node_modules/
-bower_components/
-bower.json
-.idea/
-app/
+node_modules

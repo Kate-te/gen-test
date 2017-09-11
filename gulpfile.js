@@ -39,7 +39,8 @@ var path = {
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build',
-    awesome: 'src/style/font-awesome.min.css'
+    awesome: 'src/style/font-awesome.min.css',
+    nouislider: 'src/style/nouislider.min.css'
 
 };
 
@@ -89,6 +90,10 @@ gulp.task('js:build', function () {
 });
 gulp.task('awesome', function() {
     gulp.src(path.awesome)
+        .pipe(gulp.dest(path.build.css))
+});
+gulp.task('nouislider', function() {
+    gulp.src(path.nouislider)
         .pipe(gulp.dest(path.build.css))
 });
 
